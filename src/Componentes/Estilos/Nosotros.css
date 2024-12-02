@@ -1,0 +1,114 @@
+/* Sección de eslogan */
+.slogan-section {
+    background-color: #000; /* Fondo negro */
+    color: #777777; /* Texto blanco */
+    text-align: center;
+    padding: 160px 20px; /* Aumentamos el padding superior para hacerla más grande */
+    background-image: url("../Imagenes/banner.png"); /* Fondo de imagen opcional */
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Fondo difuso */
+    z-index: 1; /* Asegura que el eslogan esté por encima de la sección "Nosotros" */
+    position: relative;
+    border-top: 5px solid #00B5D8; /* Línea azul en la parte superior */
+    border-bottom: 5px solid #00B5D8; /* Línea azul en la parte inferior */
+    margin-top: 30px; /* Margen superior para crear un espaciado entre la imagen y la línea superior */
+    margin-bottom: 30px; /* Margen inferior para crear un espaciado entre la imagen y la línea inferior */
+  }
+  
+  .slogan-section h1 {
+    font-size: 2.5rem;
+    color: #1F51FF; /* Azul Francia */
+    margin-bottom: 20px;
+  }
+  
+  .slogan-section p {
+    font-size: 1.5rem;
+    color: #ab3c17;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  /* Sección Nosotros */
+  .about-section{
+    margin-top: 100px;
+  }
+  .about-section h3{
+    font-size: 1.5rem;
+    color: black; /* Azul Francia */
+    text-align: left;
+    width: 90%;
+    border-bottom: 5px solid #00B5D8;
+    margin-bottom: 30px;
+
+  }
+  
+  .nosotros-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 20px 40px 20px;
+    z-index: 0;
+  }
+  
+  .nosotros-text {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .nosotros-text h2 {
+    font-size: 2rem;
+    color: #1F51FF; /* Azul Francia */
+  }
+  
+  .nosotros-text p {
+    font-size: 1rem;
+    color: #777777;
+    line-height: 1.6;
+  }
+  
+  .nosotros-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nosotros-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Ajusta la imagen a un tamaño máximo */
+    border-radius: 10px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .slogan-section {
+      padding: 140px 20px; /* Menor padding en móviles */
+      margin-top: 20px; /* Menor margen superior en móviles */
+      margin-bottom: 20px; /* Menor margen inferior en móviles */
+    }
+  
+    .slogan-section h1 {
+      font-size: 2rem;
+    }
+  
+    .slogan-section p {
+      font-size: 1rem;
+    }
+  
+    .nosotros-container {
+      flex-direction: column; /* Los elementos se apilan en móviles */
+      text-align: center;
+    }
+  
+    .nosotros-text {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .nosotros-image img {
+      width: 80%; /* Reduzco el tamaño de la imagen para móviles */
+      max-width: none;
+    }
+  }
+  

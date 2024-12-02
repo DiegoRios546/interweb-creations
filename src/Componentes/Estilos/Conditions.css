@@ -1,0 +1,35 @@
+.terms-content {
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .swal-custom-popup {
+    border-radius: 15px;
+    font-family: "Arial", sans-serif;
+    max-width: 600px;
+    width: 90%;
+  }
+  
+  .swal-custom-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .swal-custom-html {
+    font-size: 14px;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .swal-custom-popup {
+      font-size: 12px;
+    }
+  
+    .terms-content {
+      font-size: 12px;
+    }
+  }
+  

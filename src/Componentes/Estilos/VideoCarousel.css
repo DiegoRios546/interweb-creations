@@ -1,0 +1,114 @@
+/* Estilos del Carrusel */
+.video-news-carousel {
+    width: 60%;
+    margin: 3rem auto;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+
+  }
+  
+  .video-news-carousel h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    width: 90%;
+    border-bottom: 5px solid #00B5D8;
+    margin: 1rem;
+    color: black;
+  }
+  
+  /* Contenedor de cada video */
+  .video-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Imagen de fondo de cada video */
+  .video-thumbnail {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+  
+
+  
+  /* Filtro oscuro sobre la imagen */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Contenido del video (título y descripción) */
+  .content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: left;
+    z-index: 1;
+    color: #FFFFFF;
+  }
+  
+  .content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .content .btn-watch {
+    background-color: #1F51FF; /* Azul Francia */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0, 191, 255, 0.6);
+    transition: background-color 0.3s ease;
+  }
+  
+  .content .btn-watch:hover {
+    background-color: #00B5D8;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .video-news-carousel {
+      width: 90%;
+    }
+  
+    .video-thumbnail {
+      height: 250px;
+    }
+  
+    .content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .content .btn-watch {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  

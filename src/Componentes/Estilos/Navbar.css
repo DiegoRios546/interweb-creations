@@ -1,0 +1,209 @@
+/* Logo de la empresa */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #00B5D8;
+  }
+  
+  .logo-image {
+    width: 40px; /* Tamaño del logo */
+    height: 40px;
+    margin-right: 10px; /* Espacio entre logo y texto */
+  }
+  /* Fondo oscuro para la navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #1B1B1D; /* Fondo oscuro translúcido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  position: fixed; /* Fijar la barra en la parte superior */
+  top: 0; /* Posición desde el borde superior */
+  left: 0; /* Posición desde el borde izquierdo */
+  width: 100%; /* Abarcar todo el ancho */
+  z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+/* Estilo del logo de la empresa */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:  #00B5D8; /* Azul neon */
+}
+
+/* Menú de navegación */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Elementos del menú */
+.navbar-item{
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+  border-radius: 6px;
+ margin-right: 2rem;
+ text-decoration: none;
+
+}
+.Link{
+  
+}
+
+.navbar-item:hover {
+  color: #FFFFFF;
+  background-color: #00B5D8;
+  border: 1px solid  #00B5D8; /* Borde azul neon */
+  box-shadow: 0 0 8px  #00B5D8, 0 0 15px  #00B5D8;
+  cursor: pointer;
+}
+
+/* Botón de inicio de sesión */
+.navbar-login {
+  padding: 10px 20px;
+  background-color: #1F51FF;
+  color: #FFFFFF;
+  border: 1px solid #1F51FF;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 2rem;
+}
+
+/* Hover efecto neon en el botón de inicio de sesión */
+.navbar-login:hover {
+  background-color:  #00B5D8; /* Fondo sutil */
+  box-shadow: 0 0 8px #00B5D8, 0 0 15px #00B5D8;
+}
+
+/* Efecto de navbar responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .navbar-login {
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+/* Botón hamburguesa */
+.navbar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Menú desplegable en pantallas móviles */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s ease;
+}
+
+.navbar-menu.open {
+  max-height: 300px; /* Altura máxima cuando el menú está abierto */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    display: block; /* Mostrar el botón en móviles */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0; /* Oculta el menú inicialmente */
+    overflow: hidden;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333; /* Línea divisoria */
+  }
+
+  .navbar-login {
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+
+/* Botón de inicio de sesión */
+.navbar-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #1F51FF;
+  color: #FFFFFF;
+  border: 1px solid #1F51FF;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-login:hover {
+  background-color: #00B5D8; /* Fondo sutil */
+  box-shadow: 0 0 8px #00B5D8, 0 0 15px #00B5D8;
+}
+
+/* Texto y icono */
+.login-text {
+  display: inline; /* Por defecto, mostrar el texto */
+}
+
+.login-icon {
+  display: none; /* Por defecto, ocultar el icono */
+  font-size: 1.5rem; /* Tamaño del icono */
+}
+
+/* Cambios en pantallas móviles */
+@media (max-width: 768px) {
+
+}
+
